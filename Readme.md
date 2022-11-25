@@ -1,20 +1,38 @@
-# Clone project:
+# Pre-Requisites
+You must be having an AWS account to create infrastructure resources on AWS cloud.
 
-https://github.com/atifrani/webapp.git
+# Pre-Deployment
+
+You must have AWS CLI installed and configured on you laptop
+
+# Deployment
+
+Configure NACL allowing port 22 from custom IP source  ( Your IPV4 ) and port 80 from public.
+
+Create Security Group (if not exist) allowing port 22 from custom IP source ( Your IPV4 ) and port 80 from public.
+
+Create Key-Pair (if not exist) and download the private key.
+
+Create t2.micro type EC2 instance using AMI (ami-01cae1550c0adea9c).
 
 
-# Build Docker Image
+Connect to the EC2 instance using ssh and install this packages:
+- apache httpd
+- PHP
+- GIT
 
-docker rmi webapp_img
+After installation, start the httpd service.
 
-cd webapp
+Use Git commands and clone the source code from github repository: https://github.com/atifrani/webapp1.git
 
-docker build -t webapp_img .
+Deploy the source code into EC2 instance in the folder: cd /var/www/html
 
-# Run Docker Container
+Create S3 bucket with public access.
 
- docker run --name webapp_cnt -d -p 8080:80 webapp_img
+Copy the images folder to the S3 bucket.
 
- # Test webapp
+Update the source code to allow acces to the images folder
 
- http://localhost:8080/
+# Validation
+
+Verify if you are able to access the web application from internet browser. ec2-ipv4/app/index.php
