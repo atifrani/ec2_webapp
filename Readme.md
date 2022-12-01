@@ -28,6 +28,8 @@ Deploy the source code into EC2 instance in the folder: cd /var/www/html
 
 Create S3 bucket with public access.
 
+Check if all bucket objects have public read permission
+
 Copy the images folder to the S3 bucket.
 
 Update the source code to allow acces to the images folder
