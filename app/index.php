@@ -32,7 +32,7 @@ error_reporting(E_ALL);
     <main role="main" class="container">
 
     <h3>LES INGÉNIEURS QUI TRANSFORMENT LE MONDE</h3>
-    <img src="../images/image.png">
+    <img src="S3path/image.png">
 
     </main>
     <footer class="page-footer font-small bg-dark mt-5">
