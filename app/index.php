@@ -32,7 +32,7 @@ error_reporting(E_ALL);
     <main role="main" class="container">
 
     <h3>LES INGÉNIEURS QUI TRANSFORMENT LE MONDE</h3>
-    <img src="S3path/image.png">
+    <img src="https://s3.eu-west-1.amazonaws.com/www.logbrain.fr/image.png">
 
     </main>
     <footer class="page-footer font-small bg-dark mt-5">
