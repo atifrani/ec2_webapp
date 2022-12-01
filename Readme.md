@@ -18,7 +18,6 @@ Create t2.micro type EC2 instance using AMI (ami-01cae1550c0adea9c).
 
 Connect to the EC2 instance using ssh and install this packages:
 - apache httpd
-- PHP
 - GIT
 
 After installation, start the httpd service.
