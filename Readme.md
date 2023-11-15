@@ -22,7 +22,7 @@ Connect to the EC2 instance using ssh and install this packages:
 
 After installation, start the httpd service.
 
-Use Git commands and clone the source code from github repository: https://github.com/atifrani/webapp2.git
+Use Git commands and clone the source code from github repository: https://github.com/atifrani/ec2_webapp.git
 
 Deploy the source code into EC2 instance in the folder: cd /var/www/html
 
