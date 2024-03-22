@@ -14,9 +14,9 @@ Create Security Group (if not exist) allowing ssh protocol on port 22 from custo
 Create t2.micro type EC2 instance using AMI (ami-01cae1550c0adea9c).
 
 Connect to the EC2 instance using ssh protocol and install this packages:
-- apache httpd
+- apache httpd:
   sudo yum install httpd -y
-- GIT
+- GIT:
   sudo yum install git -y
 
 After installation, start the httpd service.
