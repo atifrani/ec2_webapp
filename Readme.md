@@ -25,8 +25,9 @@ After installation, start the httpd service.
 Use Git commands and clone the source code from github repository: https://github.com/atifrani/ec2_webapp.git
 git clone https://github.com/atifrani/ec2_webapp.git
 
-Deploy the source code into EC2 instance in the folder: cd /var/www/html
-sudo mv ec2_webapp /var/www/html
+Deploy the source code into EC2 instance in the folder:   
+cd /var/www/html  
+sudo mv ec2_webapp /var/www/html  
 
 Create S3 bucket with public access.
 
